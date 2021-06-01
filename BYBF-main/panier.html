@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYBF Vente en ligne</title>
+    <link rel="stylesheet" href="panier.css">
+  
+    
+</head>
+<body>
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <a href="hompepage.html"><img src="photo/ppInsta.jpg"  alt="logoBYBF" class="logoBYBF"></a>
+            <ul class="navigation">
+                <li>
+                    <a>Accueil</a>
+                </li>
+                <li>
+                    <a>Homme</a>
+                </li>
+                <li>
+                    <a>Femme</a>
+                </li>
+
+                <li>
+                    <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                </li>
+                 <li class="cart"><a href="hompepage.html"><ion-icon ios="ios-basket" md="md-basket"></ion-icon></a><span>0</span>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+    <!-- Achat -->
+    <section class panier>
+        <h2 class="titre2">
+            MON PANIER
+        </h2>
+      </section>
+
+    <div class="products-container"> 
+          <!-- <div class="product-header"> -->
+          <!-- <h4 class="product-title">PRODUCT</h4> -->
+          <!-- <h4 class="price">PRICE</h4> -->
+          <!-- <h4 class="quantity">QUANTITY</h4> -->
+          <!-- <h4 class="total">TOTAL</h4> -->
+    
+      <div class="products"></div> 
+      <div class="recapitulatif">
+          <h3 class="titretotal">Total :</h3>
+          <div class="paiment"><h3 class="titre3">PAIMENT</h3></div>
+          <div class="paypal"><h3 class="titre3">PayPal</h3></div>
+          <div class="codepromo"><h3 class="titrecode">Code Promotionel</h3><ion-icon ios="ios-add" md="md-add"></ion-icon></div>
+
+          
+      </div>
+
+      <div class="recapitulatif1">
+        <h3 class="titretotal1">Total :</h3>
+        <div class="paiment1"><h3 class="titre31">PAIMENT</h3></div>
+        <div class="paypal1"><h3 class="titre31">PayPal</h3></div>
+        <div class="codepromo1"><h3 class="titrecode1">Code Promotionel</h3></div>
+
+        
+    </div>
+      
+       
+
+    </div>
+
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2020 - BYBF</span>
+        <a href="#" class="conditions">Condition générales de vente</a>
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.navigation');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+
+   
+      
+  
+
+
+      <script src="panier.js"></script>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+   
+</body>
+</html>

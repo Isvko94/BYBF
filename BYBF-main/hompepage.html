@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="panier.js"></script>
+    <title>BYBF SHOP</title>
+</head>
+
+<body>
+    
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <img src="photo/ppInsta.jpg" alt="logoBYBF" class="logoBYBF">
+            <ul class="navigation">
+                <li>
+                    <a>Accueil</a>
+                </li>
+                <li>
+                    <a>Homme</a>
+                </li>
+                <li>
+                    <a>Femme</a>
+                </li>
+
+                <li>
+                    <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                </li>
+                 <li class="cart"><a href="panier.html"><ion-icon ios="ios-basket" md="md-basket"></ion-icon></a><span>0</span>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class="landing">
+            <h1 class="grandtexte">BYBF une nouvelle façon de voir la mode</h1>
+            <a href="#delivery" class="delivery-link">
+            </a>
+        </div>
+    </section>
+    </section>
+    <section id="t-shirt-sales" class="t-shirt-sales-container">
+        <h1 class="section-title">Le meilleur de BYBF</h1>
+        <div class="best-t-shirts">
+            <a href="article.html" class="t-shirt-box no-grid t-shirts1">
+                <div class="t-shirt-1edition">
+                    <h1 class="t-shirt-name">T-Shirt</h1>
+                    <h3 class="t-shirt-price">25,00€</h3>
+                </div>
+            </a>
+            <a href="article1.html" class="t-shirt-box no-grid t-shirts2">
+                <div class="t-shirt-1edition">
+                    <h1 class="t-shirt-name">T-Shirt</h1>
+                    <h3 class="t-shirt-price">20,00€</h3>
+                </div>
+            </a>
+            <a href="article3.html" class="t-shirt-box no-grid t-shirts3">
+                <div class="t-shirt-1edition">
+                    <h1 class="t-shirt-name">T-Shirt</h1>
+                    <h3 class="t-shirt-price">25,00€</h3>
+                </div>
+            </a>
+        </div>
+    <section id="t-shirt-explication" class="t-shirt-explixation-container">
+        <div class="explication">
+            <h4>BA YO BON FE </h4>
+
+        </div>
+     </section> 
+    <section id="t-shirt" class="t-shirt-container">
+        <h1 class="section-title">Nos T-Shirts</h1>
+        <div class="grid-t-shirt">
+            <a href="article4.html" class="t-shirt-box grid t-shirt-grid1">
+                <div class="t-shirt-1edition">
+                    <h1 class="t-shirt-name">T-Shirt</h1>
+                    <h3 class="t-shirt-price">20,00€</h3>
+                </div>
+            </a>
+            <a href="article5.html" class="t-shirt-box grid t-shirt-grid2">
+                <div class="t-shirt-1edition">
+                    <h1 class="t-shirt-name">T-Shirt</h1>
+                    <h3 class="t-shirt-price">25,00€</h3>
+                </div>
+            </a>
+            <a href="article6.html" class="t-shirt-box grid t-shirt-grid3">
+                <div class="t-shirt-1edition">
+                    <h1 class="t-shirt-name">T-Shirt</h1>
+                    <h3 class="t-shirt-price">25,00€</h3>
+                </div>
+            </a>
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2020 - BYBF</span>
+        <a href="#" class="conditions">Conditions générales de vente</a>
+        <a href="hompepage.html"><img src="photo/link.png"  alt="linkedin" class="linkedin"></a>
+        <a href="https://www.instagram.com/bybf_/"><img src="photo/insta.png"  alt="linkedin" class="linkedin"></a>
+
+        
+    </footer>
+    <!--    Java menu burgeur  -->
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.navigation');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

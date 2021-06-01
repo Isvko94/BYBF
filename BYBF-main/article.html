@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYBF Vente en ligne</title>
+    <link rel="stylesheet" href="article.css">
+  
+    
+</head>
+<body> 
+    <section id="home" class="home-container">
+        <header id="header" class="header">
+            <a href="hompepage.html"><img src="photo/ppInsta.jpg"  alt="logoBYBF" class="logoBYBF"></a>
+            <ul class="navigation">
+                <li>
+                    <a>Accueil</a>
+                </li>
+                <li>
+                    <a>Homme</a>
+                </li>
+                <li>
+                    <a>Femme</a>
+                </li>
+
+                <li>
+                    <ion-icon ios="ios-heart" md="md-heart"></ion-icon>
+                </li>
+                <li>
+                    <ion-icon ios="ios-person" md="md-person"></ion-icon>
+                </li>
+                 <li class="cart"><a href="panier.html"><ion-icon ios="ios-basket" md="md-basket"></ion-icon></a><span>0</span>
+                </li>
+            </ul>
+            <div class="burger-container">
+                <div class="burger"></div>
+            </div>
+        </header>
+        <div class= "ghost">
+        <img src="photo/T-shirtLogovert1.jpg" alt="Tshirt">
+        </div>
+        <section class=vente>
+
+                <h4 class="homme">Homme/Streetwear</h4>
+                <h3 class="style">T-SHIRT NOIR 1 EDITION </h3>
+                <h4 class="couleur">Logo Vert</h4>
+                <h3 class="prix">25,00€</h3>
+                <img src="photo/T-shirtLogovert1.jpg" alt="Tshirt">
+            <div class="globaltaille">
+                <div class="taille1"><h3>S</h3></div>
+                <div class="taille2"><h3>M</h3></div>
+                <div class="taille3"><h3>L</h3></div>
+                <div class="taille4"><h3>XL</h3></div>
+            </div>
+                 <h6 class="guide">guides des tailles</h6>
+                 <h6 class="stock">Cette taille n'est plus disponible en stock ?</h6>
+
+                <a class="Ajouterpanier cart" href="#">Ajouter panier</a>
+            
+            
+    </section>
+    <footer id="footer" class="footer">
+        <span class="copyrights">&copy; 2020 - BYBF</span>
+        <a href="#" class="conditions">Conditions générales de vente</a>
+        <a href="hompepage.html"><img src="photo/link.png"  alt="linkedin" class="linkedin"></a>
+        <a href="https://www.instagram.com/bybf_/"><img src="photo/insta.png"  alt="linkedin" class="linkedin"></a>
+
+        
+    </footer>
+    <script>
+        const burgerContainer = document.querySelector('.burger-container');
+        const navLinks = document.querySelector('.navigation');
+
+        burgerContainer.addEventListener('click', () => {
+            burgerContainer.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        })
+    </script>
+
+        <script src="panier.js"></script>
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    
+</body>
+</html>
